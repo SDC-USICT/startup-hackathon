@@ -1,11 +1,42 @@
-import React from "react";
+import { React, useState } from "react";
 import { Link } from "react-router-dom";
-import "./CSS/home.css";
+import { IoIosArrowDropupCircle } from "react-icons/io";
 import { MdOutlineComputer } from "react-icons/md";
+import "./CSS/home.css";
+
 function Home() {
+  const [visible, setVisible] = useState(false);
+
+  const toggleVisible = () => {
+    const scrolled = document.documentElement.scrollTop;
+    if (scrolled > 200) {
+      setVisible(true);
+    } else if (scrolled <= 200) {
+      setVisible(false);
+    }
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+  window.addEventListener("scroll", toggleVisible);
   return (
     <>
-      <div className="">
+      <div>
+        {/* SCROLL TO TOP  */}
+
+        <div
+          className="  fixed right-12 bottom-12 cursor-pointer "
+          onClick={scrollToTop}
+          style={{ display: visible ? "inline" : "none" }}
+        >
+          <IoIosArrowDropupCircle size={48} className="text-slate-300" />
+        </div>
+
         {/* NAVBAR */}
 
         <section className=" flex gap-x-96 flex-row border-b-2 border-slate-700 h-16 justify-center items-center ">
@@ -13,7 +44,7 @@ function Home() {
             className="text-xl text-white
           "
           >
-            Logo
+            <Link to="/">Logo</Link>
           </div>
           <div className="flex flex-row gap-x-16 justify-center items-center">
             <div className="text-slate-200  hover:text-slate-400 cursor-pointer hover:border-b-2 border-red-900 px-1 hover:ease-out duration-100 text-l">
@@ -110,11 +141,7 @@ function Home() {
         </section>
 
         {/* SPONSORS */}
-        <section>
-          
-        </section>
-
-
+        <section></section>
       </div>
     </>
   );
