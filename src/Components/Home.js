@@ -108,6 +108,13 @@ function Home() {
             </div>
           </div>
         </section>
+
+        {/* SPONSORS */}
+        <section>
+          
+        </section>
+
+
       </div>
     </>
   );
