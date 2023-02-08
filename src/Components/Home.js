@@ -2,6 +2,7 @@ import { React, useState } from "react";
 import { Link } from "react-router-dom";
 import { IoIosArrowDropupCircle } from "react-icons/io";
 import { MdOutlineComputer } from "react-icons/md";
+import { GiBullseye } from "react-icons/gi";
 import "./CSS/home.css";
 
 function Home() {
@@ -141,7 +142,86 @@ function Home() {
         </section>
 
         {/* SPONSORS */}
-        <section></section>
+        <section className="h-[55vh] flex justify-center items-center text-5xl text-lred bg-[#232731] mt-32">
+          Sponsers <br /> TO be Decided... <br /> (Whether to be made or not...)
+        </section>
+
+        {/* ABOUT */}
+
+        <section className="mx-auto container flex flex-row text-gray-400 mt-16 gap-24 pb-16">
+          {/* LEFT */}
+          <div className="basis-2/5 mt-8">
+            <div className="text-slate-300 text-2xl font-semibold">
+              If you can't explain it simply, <br /> you dont understand it
+              well...
+            </div>
+            <div className="text-mred text-sm mt-4">Albert Einstien</div>
+            <div className="mt-4 text-justify">
+              <div className="">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                cumque eveniet dignissimos, voluptas maxime placeat minima nulla
+                aliquam facilis error, commodi rerum obcaecati recusandae optio
+                id sunt perferendis.
+              </div>
+              <div className="mt-2">
+                Libero numquam architecto nulla voluptatum laboriosam, laborum
+                animi repellat, nobis illo eligendi esse iure harum atque
+                provident corporis. Accusamus praesentium nulla eligendi!
+              </div>
+              <div className="mt-2">
+                Libero numquam architecto nulla voluptatum laboriosam, laborum
+                animi repellat, nobis illo eligendi esse iure harum atque
+                provident corporis. Accusamus praesentium nulla eligendi!
+              </div>
+            </div>
+          </div>
+          {/* Right */}
+          <div className="basis-3/5">
+            <div className="flex flex-row items-center gap-4">
+              <div className="text-lred">
+                <GiBullseye size={96} />
+              </div>
+              <div className="text-slate-200 text-4xl font-semibold">
+                The Hackathon Goal
+              </div>
+            </div>
+            <div>
+              <div className="flex flex-row gap-24 mt-12">
+                <div>
+                  <div className="flex flex-row ">
+                    <div className="text-6xl font-bold text-slate-600">01</div>
+                    <div className="flex items-end text-mred font-semibold text-xl -ml-3 ">
+                      Idea
+                    </div>
+                  </div>
+                  <div className="mt-6 text-justify">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Eveniet voluptates eligendi et praesentium, porro sint
+                    voluptate ipsa laudantium maxime molestias?
+                  </div>
+                </div>
+                <div>
+                  <div className="flex flex-row ">
+                    <div className="text-6xl font-bold text-slate-600">02</div>
+                    <div className="flex items-end text-mred font-semibold text-xl -ml-3 ">
+                      Technology
+                    </div>
+                  </div>
+                  <div className="mt-6 text-justify">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Eveniet voluptates eligendi et praesentium, porro sint
+                    voluptate ipsa laudantium maxime molestias?
+                  </div>
+                </div>
+              </div>
+              <div className="mt-8">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Praesentium commodi minus illum nulla libero quidem accusamus
+                illo sunt repellendus consectetur?
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </>
   );
