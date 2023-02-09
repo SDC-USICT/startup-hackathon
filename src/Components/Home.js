@@ -271,9 +271,7 @@ function Home() {
 
         {/* FAQs */}
         <section className="h-[55vh]   mt-32 ">
-          <div
-            className="text-4xl text-mred font-semibold flex justify-center items-center"
-          >
+          <div className="text-4xl text-mred font-semibold flex justify-center items-center">
             Frequently Asked Questons
           </div>
           <div className="">
@@ -289,6 +287,29 @@ function Home() {
             </div>
           </div>
         </section>
+
+        {/* about organising team or techspace */}
+        <section className="bg-[#232731]  ">
+          <div className="container mx-auto py-6 text-gray-500 text-justify">
+            <span className="text-mred">
+              About texhspace sdc and incubation center
+            </span>{" "}
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab alias
+            culpa beatae, natus voluptatibus adipisci a nostrum aspernatur
+            voluptatem? Lorem ipsum, dolor sit amet consectetur adipisicing
+            elit. Molestias nemo neque optio atque autem eius delectus natus.
+            Quibusdam, minus repellendus?Lorem, ipsum dolor sit amet consectetur
+            adipisicing elit. Quam, similique.
+          </div>
+        </section>
+
+        {/* FOOTER */}
+
+        <section className="h-12">
+          <div>Logo</div>
+          <div>Linkden insta facebook twitter gmail phone no.</div>
+        </section>
+        <div className="h-8 bg-[#232731] "></div>
       </div>
     </>
   );
