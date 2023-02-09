@@ -4,6 +4,7 @@ import { IoIosArrowDropupCircle } from "react-icons/io";
 import { MdOutlineComputer } from "react-icons/md";
 import { GiBullseye } from "react-icons/gi";
 import "./CSS/home.css";
+import FAQ from "./faq";
 
 function Home() {
   const [visible, setVisible] = useState(false);
@@ -25,6 +26,45 @@ function Home() {
   };
 
   window.addEventListener("scroll", toggleVisible);
+
+  const [faqs, setFaqs] = useState([
+    {
+      question:
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt cupiditate minimm eveniet illo?",
+      answer:
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt cupiditate minimm eveniet illo?",
+      open: false,
+    },
+    {
+      question:
+        "HLorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt cupiditate minimm eveniet illo?",
+      answer:
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt cupiditate minimm eveniet illo?",
+      open: false,
+    },
+    {
+      question:
+        "HLorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt cupiditate minimm eveniet illo?",
+      answer:
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt cupiditate minimm eveniet illo?",
+      open: false,
+    },
+  ]);
+
+  const toggleFAQ = (index) => {
+    setFaqs(
+      faqs.map((faq, i) => {
+        if (i === index) {
+          faq.open = !faq.open;
+        } else {
+          faq.open = false;
+        }
+
+        return faq;
+      })
+    );
+  };
+
   return (
     <>
       <div>
@@ -219,6 +259,33 @@ function Home() {
                 Praesentium commodi minus illum nulla libero quidem accusamus
                 illo sunt repellendus consectetur?
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* TRACKS */}
+
+        <section className="h-[55vh] flex justify-center items-center text-5xl text-lred bg-[#232731] mt-32">
+          Tracks <br /> TO be Decided... <br /> (Whether to be made or not...)
+        </section>
+
+        {/* FAQs */}
+        <section className="h-[55vh]   mt-32 ">
+          <div
+            className="text-4xl text-mred font-semibold flex justify-center items-center"
+          >
+            Frequently Asked Questons
+          </div>
+          <div className="">
+            <div className="faqs text-slate-300 ">
+              {faqs.map((faq, index) => (
+                <FAQ
+                  faq={faq}
+                  index={index}
+                  key={index}
+                  toggleFAQ={toggleFAQ}
+                />
+              ))}
             </div>
           </div>
         </section>
