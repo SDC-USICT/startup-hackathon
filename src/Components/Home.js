@@ -7,6 +7,9 @@ import "./CSS/home.css";
 import FAQ from "./faq";
 
 function Home() {
+
+  // ON TOP
+
   const [visible, setVisible] = useState(false);
 
   const toggleVisible = () => {
@@ -27,13 +30,15 @@ function Home() {
 
   window.addEventListener("scroll", toggleVisible);
 
+  // FAQs
+
   const [faqs, setFaqs] = useState([
     {
       question:
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt cupiditate minimm eveniet illo?",
       answer:
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt cupiditate minimm eveniet illo?",
-      open: false,
+      open: true,
     },
     {
       question:
@@ -136,6 +141,8 @@ function Home() {
             </div>
           </div>
         </section>
+
+        {/* Arrow Down */}
 
         <div className="relative">
           <div className="arrow"></div>
@@ -288,8 +295,13 @@ function Home() {
           </div>
         </section>
 
+        {/* REGISTER */}
+        <div className= "container mx-auto bg-lred hover:bg-mred px-8 py-2 rounded-lg text-slate-200 hover:text-slate-300 hover:bg-red-650 cursor-pointer  w-fit font-semibold flex items-center justify-center ">
+          REGISTER
+        </div>
+
         {/* about organising team or techspace */}
-        <section className="bg-[#232731]  ">
+        <section className="bg-[#232731] mt-12 ">
           <div className="container mx-auto py-6 text-gray-500 text-justify">
             <span className="text-mred">
               About texhspace sdc and incubation center
