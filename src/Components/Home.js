@@ -88,7 +88,7 @@ function Home() {
 
         {/* NAVBAR */}
 
-        <section
+        {/* <section
           data-aos="fade-down"
           data-aos-duration="1000"
           className=" flex gap-x-96 flex-row border-b-2 border-slate-700 h-16 justify-center items-center "
@@ -116,7 +116,7 @@ function Home() {
               <div className="">REGISTER</div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* HERO */}
 
@@ -352,20 +352,20 @@ function Home() {
 
         {/* FOOTER */}
 
-        <section
+        {/* <section
           className="h-12 flex flex-row container mx-auto"
           // data-aos="fade-up"
         >
           <div>Logo</div>
           <div className="flex flex-row">
-            <div>Link</div>
-            <div>insta</div>
-            <div>fb</div>
-            <div>twitter</div>
-            <div>gmail</div>
+            <div className="dhruv-madarchod">Link</div>
+            <div className="dhruv-madarchod">insta</div>
+            <div className="dhruv-madarchod">fb</div>
+            <div className="dhruv-madarchod">twitter</div>
+            <div className="dhruv-madarchod-primary">gmail</div>
           </div>
-        </section>
-        <div className="h-8 bg-[#232731] "></div>
+        </section> */}
+        {/* <div className="h-8 bg-[#232731] "></div> */}
       </div>
     </>
   );
