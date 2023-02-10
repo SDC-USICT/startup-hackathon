@@ -5,8 +5,11 @@ import { MdOutlineComputer } from "react-icons/md";
 import { GiBullseye } from "react-icons/gi";
 import "./CSS/home.css";
 import FAQ from "./faq";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Home() {
+  AOS.init();
 
   // ON TOP
 
@@ -76,7 +79,7 @@ function Home() {
         {/* SCROLL TO TOP  */}
 
         <div
-          className="  fixed right-12 bottom-12 cursor-pointer "
+          className=" z-20 fixed right-12 bottom-12 cursor-pointer "
           onClick={scrollToTop}
           style={{ display: visible ? "inline" : "none" }}
         >
@@ -85,7 +88,11 @@ function Home() {
 
         {/* NAVBAR */}
 
-        <section className=" flex gap-x-96 flex-row border-b-2 border-slate-700 h-16 justify-center items-center ">
+        <section
+          data-aos="fade-down"
+          data-aos-duration="1000"
+          className=" flex gap-x-96 flex-row border-b-2 border-slate-700 h-16 justify-center items-center "
+        >
           <div
             className="text-xl text-white
           "
@@ -113,7 +120,11 @@ function Home() {
 
         {/* HERO */}
 
-        <section className="container mx-auto h-[85vh]">
+        <section
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          className="container mx-auto h-[85vh]"
+        >
           <div className="flex flex-row ">
             {/* LEFT HERO */}
             <div className="basis-1/2 pt-32 pl-16">
@@ -150,7 +161,11 @@ function Home() {
 
         {/* WHEN && WHERE */}
 
-        <section className="container mx-auto mt-[15vh]">
+        <section
+          className="container mx-auto mt-[15vh] "
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <div className="flex flex-row gap-x-80 ml-16">
             {/* LEFT */}
 
@@ -189,13 +204,21 @@ function Home() {
         </section>
 
         {/* SPONSORS */}
-        <section className="h-[55vh] flex justify-center items-center text-5xl text-lred bg-[#232731] mt-32">
+        <section
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          className="h-[55vh] flex justify-center items-center text-5xl text-lred bg-[#232731] mt-32"
+        >
           Sponsers <br /> TO be Decided... <br /> (Whether to be made or not...)
         </section>
 
         {/* ABOUT */}
 
-        <section className="mx-auto container flex flex-row text-gray-400 mt-16 gap-24 pb-16">
+        <section
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          className="mx-auto container flex flex-row text-gray-400 mt-16 gap-24 pb-16"
+        >
           {/* LEFT */}
           <div className="basis-2/5 mt-8">
             <div className="text-slate-300 text-2xl font-semibold">
@@ -272,12 +295,20 @@ function Home() {
 
         {/* TRACKS */}
 
-        <section className="h-[55vh] flex justify-center items-center text-5xl text-lred bg-[#232731] mt-32">
+        <section
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          className="h-[55vh] flex justify-center items-center text-5xl text-lred bg-[#232731] mt-32"
+        >
           Tracks <br /> TO be Decided... <br /> (Whether to be made or not...)
         </section>
 
         {/* FAQs */}
-        <section className="h-[55vh]   mt-32 ">
+        <section
+          className="h-[55vh]   mt-32 "
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <div className="text-4xl text-mred font-semibold flex justify-center items-center">
             Frequently Asked Questons
           </div>
@@ -296,12 +327,16 @@ function Home() {
         </section>
 
         {/* REGISTER */}
-        <div className= "container mx-auto bg-lred hover:bg-mred px-8 py-2 rounded-lg text-slate-200 hover:text-slate-300 hover:bg-red-650 cursor-pointer  w-fit font-semibold flex items-center justify-center ">
+        <div className="container mx-auto bg-lred hover:bg-mred px-8 py-2 rounded-lg text-slate-200 hover:text-slate-300 hover:bg-red-650 cursor-pointer  w-fit font-semibold flex items-center justify-center ">
           REGISTER
         </div>
 
         {/* about organising team or techspace */}
-        <section className="bg-[#232731] mt-12 ">
+        <section
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          className="bg-[#232731] mt-12 "
+        >
           <div className="container mx-auto py-6 text-gray-500 text-justify">
             <span className="text-mred">
               About texhspace sdc and incubation center
@@ -317,9 +352,18 @@ function Home() {
 
         {/* FOOTER */}
 
-        <section className="h-12">
+        <section
+          className="h-12 flex flex-row container mx-auto"
+          // data-aos="fade-up"
+        >
           <div>Logo</div>
-          <div>Linkden insta facebook twitter gmail phone no.</div>
+          <div className="flex flex-row">
+            <div>Link</div>
+            <div>insta</div>
+            <div>fb</div>
+            <div>twitter</div>
+            <div>gmail</div>
+          </div>
         </section>
         <div className="h-8 bg-[#232731] "></div>
       </div>
