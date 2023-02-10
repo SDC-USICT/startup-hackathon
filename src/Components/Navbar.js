@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import Aos from "aos";
-// import "aos/dist/aos.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Navbar() {
-  //   AOS.init();
+    AOS.init();
   return (
     <div>
       <section
