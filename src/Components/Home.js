@@ -104,7 +104,7 @@ function Home() {
               About
             </div>
             <div className="text-slate-200  hover:text-slate-400 cursor-pointer hover:border-b-2 border-red-900 px-1 hover:ease-out duration-100">
-              Sponsors
+              Team
             </div>
             <div className="text-slate-200  hover:text-slate-400 cursor-pointer hover:border-b-2 border-red-900 px-1 hover:ease-out duration-100">
               FAQs
