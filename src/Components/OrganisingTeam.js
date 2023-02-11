@@ -6,7 +6,7 @@ function OrganisingTeam() {
       <section
         // data-aos="fade-up"
         // data-aos-duration="1000"
-        className="bg-[#232731] mt-12 "
+        className=" mt-12 "
       >
         <div className="container mx-auto py-6 text-gray-500 text-justify">
           <span className="text-mred">

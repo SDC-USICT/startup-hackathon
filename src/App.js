@@ -7,6 +7,7 @@ import Navbar from "./Components/Navbar";
 import Team from "./Components/Team";
 import ScrollOnTop from "./Components/scrollOnTop";
 import Announcement from "./Components/announcement";
+import Timeline from "./Components/Timeline";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/team" element={<Team />} />
           <Route path="/announcement" element={<Announcement />} />
+          <Route path="/timeline" element={<Timeline />} />
         </Routes>
         <Footer />
       </Router>

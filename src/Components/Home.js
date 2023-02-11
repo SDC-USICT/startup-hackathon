@@ -11,6 +11,7 @@ import Tracks from "./Tracks";
 import Faqs from "./Faqs";
 import OrganisingTeam from "./OrganisingTeam";
 import Register from "./Register";
+import Timeline from "./Timeline";
 
 function Home() {
   AOS.init();
@@ -32,6 +33,7 @@ function Home() {
         <Sponsors />
         <Goals />
         <Tracks />
+        <Timeline />
         <Faqs />
         <Register />
         <OrganisingTeam />
