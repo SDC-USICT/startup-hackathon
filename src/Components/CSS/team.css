@@ -16,7 +16,7 @@
 /*	01) Base
 /*------------------------------------------------------------------*/
 
-:root {
+/* :root {
   --sbc: #0a0a0a;
   --mc: #78f701;
   --hc: #fff;
@@ -25,7 +25,7 @@
   --bff: "Nunito", sans-serif;
   --eff: "Open Sans", sans-serif;
   --extra-color: #666;
-}
+} */
 /* 
 html {
   overflow-x: hidden;
@@ -39,7 +39,7 @@ html {
   box-sizing: border-box;
 } */
 
-body {
+/* body {
   font-family: var(--bff);
   font-size: 18px;
   letter-spacing: 0;
@@ -49,7 +49,7 @@ body {
   position: relative;
   word-break: break-word;
   background-color: var(--sbc);
-}
+} */
 
 .fn__svg {
   fill: currentcolor;
@@ -96,14 +96,14 @@ input[type="text"]:focus {
 /*	02) Container
 /*------------------------------------------------------------------*/
 
-.container {
+/* .container {
   width: 100%;
   max-width: 1360px;
   padding: 0 80px;
   margin: 0 auto;
-}
+} */
 
-.container.wide {
+/* .container.wide {
   max-width: 1760px;
 }
 
@@ -135,21 +135,21 @@ input[type="text"]:focus {
   .container {
     padding: 0 10px;
   }
-}
+} */
 
 /*------------------------------------------------------------------*/
 
 /*	02) Some codes
 /*------------------------------------------------------------------*/
 
-a.full_link {
+/* a.full_link {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   z-index: 1;
-}
+} */
 
 .bg_overlay .bg_image,
 .bg_overlay .bg_color,

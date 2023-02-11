@@ -6,6 +6,7 @@ import Footer from "./Components/footer";
 import Navbar from "./Components/Navbar";
 import Team from "./Components/Team";
 import ScrollOnTop from "./Components/scrollOnTop";
+import Announcement from "./Components/announcement";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/team" element={<Team />} />
+          <Route path="/announcement" element={<Announcement />} />
         </Routes>
         <Footer />
       </Router>
