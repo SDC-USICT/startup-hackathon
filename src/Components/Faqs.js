@@ -48,7 +48,7 @@ function Faqs() {
   return (
     <div id="faq">
       <section
-        className="h-[55vh]   mt-32 "
+        className="h-[55vh] pt-16  mt-32 bg-[#232731]"
         data-aos="fade-up"
         data-aos-duration="1000"
       >

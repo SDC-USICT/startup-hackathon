@@ -11,7 +11,7 @@ function Hero() {
       <section
         data-aos="fade-up"
         data-aos-duration="1000"
-        className="container mx-auto h-[85vh]"
+        className="container mx-auto h-[75vh]"
       >
         <div className="flex flex-row ">
           {/* LEFT HERO */}
