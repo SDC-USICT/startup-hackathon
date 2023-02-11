@@ -48,6 +48,11 @@ function Navbar() {
               Contact Us
             </Link>
           </div>
+          <div className="text-slate-200  hover:text-slate-400 cursor-pointer hover:border-b-2 border-red-900 px-1 hover:ease-out duration-100">
+            <Link className="nav-link" to="/announcement">
+              Announcement
+            </Link>
+          </div>
           <div className="bg-lred hover:bg-mred px-8 py-2 rounded-lg text-slate-200 hover:text-slate-300 hover:bg-red-650 cursor-pointer font-semibold">
             {/* <div className="">REGISTER</div> */}
             <Link className="nav-link" to="/register">
