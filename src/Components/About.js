@@ -4,7 +4,7 @@ function About() {
   return (
     <div>
       <section id="information" class="nobackground pt-5">
-        <div className="container">
+        <div className="container mx-auto">
           {/* About Item /1 */}
           <div className="neoh_fn_about_item ">
             <div className="img_item">

@@ -4,10 +4,10 @@ function Team() {
   return (
     <div>
       <section id="team" className="bgColorTeam pt-5">
-        <div className="container">
+        <div className="container mx-auto">
           {/* Main Title */}
           <div className="neoh_fn_title">
-            <h3 className="fn_title team-title atmosphere theme">
+            <h3 className="fn_title team-title about-head atmosphere theme">
               Our Team Members
             </h3>
             <div className="line">
