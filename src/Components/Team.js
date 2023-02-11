@@ -32,7 +32,7 @@ function Team() {
                       <img src={require("./images/map.png")} alt="" />
                     </div>
                     <div className="title_holder">
-                      <h3 className="fn_title theme">Dhruv Aeron</h3>
+                      <h3 className="fn_title theme dev-name">Dhruv Aeron</h3>
                       <p className="fn_desc">Web Lead</p>
                     </div>
                   </div>
@@ -209,7 +209,7 @@ function Team() {
                       <img src={require("./images/map.png")} alt="" />
                     </div>
                     <div className="title_holder">
-                      <h3 className="fn_title theme">Ayush Baliyan</h3>
+                      <h3 className="fn_title dev-name theme">Ayush Baliyan</h3>
                       <p className="fn_desc">Web Lead</p>
                     </div>
                   </div>
@@ -386,7 +386,7 @@ function Team() {
                       <img src={require("./images/map.png")} alt="" />
                     </div>
                     <div className="title_holder">
-                      <h3 className="fn_title theme">Aryavir Malik</h3>
+                      <h3 className="fn_title theme dev-name">Aryavir Malik</h3>
                       <p className="fn_desc">Web Lead</p>
                     </div>
                   </div>
@@ -563,7 +563,9 @@ function Team() {
                       <img src={require("./images/map.png")} alt="" />
                     </div>
                     <div className="title_holder">
-                      <h3 className="fn_title theme">Harshil Bansal</h3>
+                      <h3 className="fn_title theme dev-name">
+                        Harshil Bansal
+                      </h3>
                       <p className="fn_desc">Web Lead</p>
                     </div>
                   </div>
@@ -740,7 +742,7 @@ function Team() {
                       <img src={require("./images/map.png")} alt="" />
                     </div>
                     <div className="title_holder">
-                      <h3 className="fn_title theme">Yash</h3>
+                      <h3 className="fn_title theme dev-name">Yash</h3>
                       <p className="fn_desc">Web Lead</p>
                     </div>
                   </div>
@@ -917,7 +919,7 @@ function Team() {
                       <img src={require("./images/map.png")} alt="" />
                     </div>
                     <div className="title_holder">
-                      <h3 className="fn_title theme">Ramashankar</h3>
+                      <h3 className="fn_title theme dev-name">Ramashankar</h3>
                       <p className="fn_desc">Web Lead</p>
                     </div>
                   </div>
