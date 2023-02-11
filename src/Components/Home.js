@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import { React, useState,useRef } from "react";
 import "./CSS/home.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -14,20 +14,27 @@ import Register from "./Register";
 
 function Home() {
   AOS.init();
-
+ const paraRef = useRef(null);
+ const clickHandler = () => {
+   paraRef.current &&
+     paraRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+ };
   return (
     <>
       <div>
         <Hero />
-        <Arrow />
-        <WhenAndWhere />
+        <div onClick={clickHandler} className="cursor-pointer">
+          <Arrow />
+        </div>
+        <div ref={paraRef}>
+          <WhenAndWhere />
+        </div>{" "}
         <Sponsors />
         <Goals />
         <Tracks />
         <Faqs />
         <Register />
         <OrganisingTeam />
-
         {/* FOOTER */}
       </div>
     </>

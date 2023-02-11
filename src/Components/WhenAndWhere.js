@@ -6,7 +6,7 @@ function WhenAndWhere() {
   return (
     <div>
       <section
-        className="container mx-auto mt-[15vh] "
+        className="container mx-auto pt-[10vh] mt-[10vh] "
         data-aos="fade-up"
         data-aos-duration="1000"
       >
