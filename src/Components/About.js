@@ -12,7 +12,7 @@ function About() {
             </div>
             <div className="content_item">
               <div className="neoh_fn_title" data-align="left">
-                <h3 className="atmosphere about-headings">USICT</h3>
+                <h3 className="atmosphere about-headings about-head">USICT</h3>
                 <div className="line usict-line">
                   <span />
                 </div>
@@ -44,7 +44,9 @@ function About() {
             <div className="content_item">
               {/* <MatrixRain /> */}
               <div className="neoh_fn_title" data-align="left">
-                <h3 className="atmosphere about-headings">StartUp Hackathon</h3>
+                <h3 className="atmosphere about-headings about-head">
+                  StartUp Hackathon
+                </h3>
                 <div className="line line-about startup-line">
                   <span />
                 </div>
@@ -77,7 +79,9 @@ function About() {
             <div className="content_item">
               {/* <MatrixRain /> */}
               <div className="neoh_fn_title" data-align="left">
-                <h3 className="atmosphere about-headings">SDC USS</h3>
+                <h3 className="atmosphere about-headings about-head">
+                  SDC USS
+                </h3>
                 <div className="line line-about sdc-line">
                   <span />
                 </div>
@@ -107,7 +111,9 @@ function About() {
             <div className="content_item">
               {/* <MatrixRain /> */}
               <div className="neoh_fn_title" data-align="left">
-                <h3 className="atmosphere about-headings">TechSpace</h3>
+                <h3 className="atmosphere about-headings about-head">
+                  TechSpace
+                </h3>
                 <div className="line line-about techspace-line">
                   <span />
                 </div>

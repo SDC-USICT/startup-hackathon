@@ -7,7 +7,9 @@ function Team() {
         <div className="container">
           {/* Main Title */}
           <div className="neoh_fn_title">
-            <h3 className="fn_title atmosphere theme">Our Team Members</h3>
+            <h3 className="fn_title team-title atmosphere theme">
+              Our Team Members
+            </h3>
             <div className="line">
               <span />
             </div>
