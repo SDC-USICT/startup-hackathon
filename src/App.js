@@ -4,18 +4,15 @@ import Home from "./Components/Home";
 import Dashboard from "./Components/dashboard";
 import Footer from "./Components/footer";
 import Navbar from "./Components/Navbar";
-// <<<<<<< HEAD
 import Team from "./Components/Team";
-// =======
-// import ScrollOnTop from "./Components/scrollOnTop";
-// >>>>>>> a781dc865e881ab7e6cc3b85658414cc0dafd3d4
+import ScrollOnTop from "./Components/scrollOnTop";
 
 function App() {
   return (
     <>
       <Router>
         <Navbar />
-        {/* <ScrollOnTop /> */}
+        <ScrollOnTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/dashboard" element={<Dashboard />} />

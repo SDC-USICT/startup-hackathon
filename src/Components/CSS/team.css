@@ -26,7 +26,7 @@
   --eff: "Open Sans", sans-serif;
   --extra-color: #666;
 }
-
+/* 
 html {
   overflow-x: hidden;
   padding: 0px;
@@ -37,7 +37,7 @@ html {
 *:before,
 * {
   box-sizing: border-box;
-}
+} */
 
 body {
   font-family: var(--bff);
@@ -62,42 +62,7 @@ body {
   opacity: 1;
 }
 
-p {
-  letter-spacing: 0;
-  margin-bottom: 20px;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: var(--hc);
-  font-family: var(--hff);
-  line-height: 1.22;
-  letter-spacing: 0;
-}
-
-h1 > a,
-h2 > a,
-h3 > a,
-h4 > a,
-h5 > a,
-h6 > a {
-  text-decoration: none;
-  color: var(--hc);
-}
-
-h1 > a:hover,
-h2 > a:hover,
-h3 > a:hover,
-h4 > a:hover,
-h5 > a:hover,
-h6 > a:hover {
-  color: var(--mc);
-}
-
+/* 3
 input[type="text"] {
   background-color: #181818;
   border-radius: 5px;
