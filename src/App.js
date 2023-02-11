@@ -4,6 +4,7 @@ import Home from "./Components/Home";
 import Dashboard from "./Components/dashboard";
 import Footer from "./Components/footer";
 import Navbar from "./Components/Navbar";
+import About from "./Components/About";
 // <<<<<<< HEAD
 import Team from "./Components/Team";
 // =======
@@ -20,8 +21,9 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/team" element={<Team />} />
+          <Route path="/about" element={<About />} />
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </Router>
     </>
   );

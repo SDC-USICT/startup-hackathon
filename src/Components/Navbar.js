@@ -4,7 +4,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 function Navbar() {
-    AOS.init();
+  AOS.init();
   return (
     <div>
       <section
@@ -20,19 +20,39 @@ function Navbar() {
         </div>
         <div className="flex flex-row gap-x-16 justify-center items-center">
           <div className="text-slate-200  hover:text-slate-400 cursor-pointer hover:border-b-2 border-red-900 px-1 hover:ease-out duration-100 text-l">
-            About
+            <Link className="nav-link" to="/about">
+              About
+            </Link>
           </div>
           <div className="text-slate-200  hover:text-slate-400 cursor-pointer hover:border-b-2 border-red-900 px-1 hover:ease-out duration-100">
-            Team
+            <Link className="nav-link" to="/team">
+              Team
+            </Link>
           </div>
           <div className="text-slate-200  hover:text-slate-400 cursor-pointer hover:border-b-2 border-red-900 px-1 hover:ease-out duration-100">
-            FAQs
+            <Link
+              className="nav-link"
+              //   to="/"
+              to="faq"
+              spy={true}
+              smooth={true}
+              offset={1000}
+              duration={1000}
+              //   onClick={closeMenu}
+            >
+              FAQs
+            </Link>
           </div>
           <div className="text-slate-200  hover:text-slate-400 cursor-pointer hover:border-b-2 border-red-900 px-1 hover:ease-out duration-100">
-            Contact Us
+            <Link className="nav-link" to="/contactus">
+              Contact Us
+            </Link>
           </div>
           <div className="bg-lred hover:bg-mred px-8 py-2 rounded-lg text-slate-200 hover:text-slate-300 hover:bg-red-650 cursor-pointer font-semibold">
-            <div className="">REGISTER</div>
+            {/* <div className="">REGISTER</div> */}
+            <Link className="nav-link" to="/register">
+              REGISTER
+            </Link>
           </div>
         </div>
       </section>

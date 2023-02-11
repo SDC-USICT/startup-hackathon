@@ -1,52 +1,52 @@
-import {React,useState} from 'react'
+import { React, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import FAQ from "./faq";
 
 function Faqs() {
-     AOS.init();
+  AOS.init();
 
-     // FAQs
+  // FAQs
 
-     const [faqs, setFaqs] = useState([
-       {
-         question:
-           "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt cupiditate minimm eveniet illo?",
-         answer:
-           "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt cupiditate minimm eveniet illo?",
-         open: true,
-       },
-       {
-         question:
-           "HLorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt cupiditate minimm eveniet illo?",
-         answer:
-           "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt cupiditate minimm eveniet illo?",
-         open: false,
-       },
-       {
-         question:
-           "HLorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt cupiditate minimm eveniet illo?",
-         answer:
-           "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt cupiditate minimm eveniet illo?",
-         open: false,
-       },
-     ]);
+  const [faqs, setFaqs] = useState([
+    {
+      question:
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt cupiditate minimm eveniet illo?",
+      answer:
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt cupiditate minimm eveniet illo?",
+      open: true,
+    },
+    {
+      question:
+        "HLorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt cupiditate minimm eveniet illo?",
+      answer:
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt cupiditate minimm eveniet illo?",
+      open: false,
+    },
+    {
+      question:
+        "HLorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt cupiditate minimm eveniet illo?",
+      answer:
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt cupiditate minimm eveniet illo?",
+      open: false,
+    },
+  ]);
 
-     const toggleFAQ = (index) => {
-       setFaqs(
-         faqs.map((faq, i) => {
-           if (i === index) {
-             faq.open = !faq.open;
-           } else {
-             faq.open = false;
-           }
+  const toggleFAQ = (index) => {
+    setFaqs(
+      faqs.map((faq, i) => {
+        if (i === index) {
+          faq.open = !faq.open;
+        } else {
+          faq.open = false;
+        }
 
-           return faq;
-         })
-       );
-     };
+        return faq;
+      })
+    );
+  };
   return (
-    <div>
+    <div id="faq">
       <section
         className="h-[55vh]   mt-32 "
         data-aos="fade-up"
@@ -67,4 +67,4 @@ function Faqs() {
   );
 }
 
-export default Faqs
+export default Faqs;

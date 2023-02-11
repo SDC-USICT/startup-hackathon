@@ -1,272 +1,140 @@
-// import React from "react";
-// import NeonRain from "./NeonRain";
-// import MatrixRain from "./MatrixRain";
+import React from "react";
 
-// const About = () => {
-//   return (
-//     <>
-//       <section id="team" className="bgColorTeam pt-5">
-//         <div className="container">
-//           {/* Main Title */}
-//           <div className="neoh_fn_title">
-//             <h3 className="fn_title atmosphere theme">Our Team Members</h3>
-//             <div className="line">
-//               <span />
-//             </div>
-//           </div>
-//           {/* !Main Title */}
-//           <div className="mw_650 fn_description">
-//             <p className="fn_desc fn_animated_text">
-//               The idea was born in London and rapidly became a borderless vision
-//               - A team of Neoh with a background in computer graphics, crypto,
-//               technology, and art.
-//             </p>
-//           </div>
-//           {/* Team List Shortcode */}
-//           <div className="neoh_fn_team">
-//             <ul className="team_list justify-content-center">
-//               <li className="team_item">
-//                 <div className="t_item">
-//                   <div className="person_info">
-//                     <div className="img_holder">
-//                       <img
-//                         src={require("./Assets/img/author/dhruvaeron.jpeg")}
-//                         alt=""
-//                       />
-//                     </div>
-//                     <div className="title_holder">
-//                       <h3 className="fn_title theme">Dhruv Aeron</h3>
-//                       <p className="fn_desc">Web Lead</p>
-//                     </div>
-//                   </div>
-//                   <div className="person_social">
-//                     <ul>
-//                       <li>
-//                         <a
-//                           href="https://www.linkedin.com/in/dhruv-gupta-55034a228/"
-//                           target="_blank"
-//                           rel="noreferrer"
-//                         >
-//                           <i className="fa-brands fa-linkedin" />
-//                         </a>
-//                       </li>
-//                       <li>
-//                         <a
-//                           href="https://instagram.com/dhruv._0810"
-//                           target="_blank"
-//                           rel="noreferrer"
-//                         >
-//                           <i className="fa-brands fa-instagram" />
-//                         </a>
-//                       </li>
-//                       <li>
-//                         <a
-//                           href="https://github.com/MR-DHRUV "
-//                           target="_blank"
-//                           rel="noreferrer"
-//                         >
-//                           <i className="fa-brands fa-github" />
-//                         </a>
-//                       </li>
-//                     </ul>
-//                   </div>
-//                 </div>
-//               </li>
-//               <li className="team_item">
-//                 <div className="t_item">
-//                   <div className="person_info">
-//                     <div className="img_holder">
-//                       <img
-//                         src={require("./Assets/img/author/dhruvgupta.png")}
-//                         alt=""
-//                       />
-//                     </div>
-//                     <div className="title_holder">
-//                       <h3 className="fn_title theme">Dhruv Gupta</h3>
-//                       <p className="fn_desc">Web Lead</p>
-//                     </div>
-//                   </div>
-//                   <div className="person_social">
-//                     <ul>
-//                       <li>
-//                         <a
-//                           href="https://www.linkedin.com/in/dhruv-gupta-55034a228/"
-//                           target="_blank"
-//                           rel="noreferrer"
-//                         >
-//                           <i className="fa-brands fa-linkedin" />
-//                         </a>
-//                       </li>
-//                       <li>
-//                         <a
-//                           href="https://instagram.com/dhruv._0810"
-//                           target="_blank"
-//                           rel="noreferrer"
-//                         >
-//                           <i className="fa-brands fa-instagram" />
-//                         </a>
-//                       </li>
-//                       <li>
-//                         <a
-//                           href="https://github.com/MR-DHRUV "
-//                           target="_blank"
-//                           rel="noreferrer"
-//                         >
-//                           <i className="fa-brands fa-github" />
-//                         </a>
-//                       </li>
-//                     </ul>
-//                   </div>
-//                 </div>
-//               </li>
-//               <li className="team_item">
-//                 <div className="t_item">
-//                   <div className="person_info">
-//                     <div className="img_holder">
-//                       <img
-//                         src={require("./Assets/img/author/kartit.jpeg")}
-//                         alt=""
-//                       />
-//                     </div>
-//                     <div className="title_holder">
-//                       <h3 className="fn_title theme">Kartik singh</h3>
-//                       <p className="fn_desc">Web Lead</p>
-//                     </div>
-//                   </div>
-//                   <div className="person_social">
-//                     <ul>
-//                       <li>
-//                         <a
-//                           href="https://www.linkedin.com/in/dhruv-gupta-55034a228/"
-//                           target="_blank"
-//                           rel="noreferrer"
-//                         >
-//                           <i className="fa-brands fa-linkedin" />
-//                         </a>
-//                       </li>
-//                       <li>
-//                         <a
-//                           href="https://instagram.com/dhruv._0810"
-//                           target="_blank"
-//                           rel="noreferrer"
-//                         >
-//                           <i className="fa-brands fa-instagram" />
-//                         </a>
-//                       </li>
-//                       <li>
-//                         <a
-//                           href="https://github.com/MR-DHRUV "
-//                           target="_blank"
-//                           rel="noreferrer"
-//                         >
-//                           <i className="fa-brands fa-github" />
-//                         </a>
-//                       </li>
-//                     </ul>
-//                   </div>
-//                 </div>
-//               </li>
-//               <li className="team_item">
-//                 <div className="t_item">
-//                   <div className="person_info">
-//                     <div className="img_holder">
-//                       <img
-//                         src={require("./Assets/img/author/Nishant.jpeg")}
-//                         alt=""
-//                       />
-//                     </div>
-//                     <div className="title_holder">
-//                       <h3 className="fn_title theme">Nishant ola</h3>
-//                       <p className="fn_desc">Web Lead</p>
-//                     </div>
-//                   </div>
-//                   <div className="person_social">
-//                     <ul>
-//                       <li>
-//                         <a
-//                           href="https://www.linkedin.com/in/dhruv-gupta-55034a228/"
-//                           target="_blank"
-//                           rel="noreferrer"
-//                         >
-//                           <i className="fa-brands fa-linkedin" />
-//                         </a>
-//                       </li>
-//                       <li>
-//                         <a
-//                           href="https://instagram.com/dhruv._0810"
-//                           target="_blank"
-//                           rel="noreferrer"
-//                         >
-//                           <i className="fa-brands fa-instagram" />
-//                         </a>
-//                       </li>
-//                       <li>
-//                         <a
-//                           href="https://github.com/MR-DHRUV "
-//                           target="_blank"
-//                           rel="noreferrer"
-//                         >
-//                           <i className="fa-brands fa-github" />
-//                         </a>
-//                       </li>
-//                     </ul>
-//                   </div>
-//                 </div>
-//               </li>
-//               <li className="team_item">
-//                 <div className="t_item">
-//                   <div className="person_info">
-//                     <div className="img_holder">
-//                       <img
-//                         src={require("./Assets/img/author/shivesh.jpg")}
-//                         alt=""
-//                       />
-//                     </div>
-//                     <div className="title_holder">
-//                       <h3 className="fn_title theme">Shivesh Nandan</h3>
-//                       <p className="fn_desc">Web Lead</p>
-//                     </div>
-//                   </div>
-//                   <div className="person_social">
-//                     <ul>
-//                       <li>
-//                         <a
-//                           href="https://www.linkedin.com/in/dhruv-gupta-55034a228/"
-//                           target="_blank"
-//                           rel="noreferrer"
-//                         >
-//                           <i className="fa-brands fa-linkedin" />
-//                         </a>
-//                       </li>
-//                       <li>
-//                         <a
-//                           href="https://instagram.com/dhruv._0810"
-//                           target="_blank"
-//                           rel="noreferrer"
-//                         >
-//                           <i className="fa-brands fa-instagram" />
-//                         </a>
-//                       </li>
-//                       <li>
-//                         <a
-//                           href="https://github.com/MR-DHRUV "
-//                           target="_blank"
-//                           rel="noreferrer"
-//                         >
-//                           <i className="fa-brands fa-github" />
-//                         </a>
-//                       </li>
-//                     </ul>
-//                   </div>
-//                 </div>
-//               </li>
-//             </ul>
-//           </div>
-//           {/* !Team List Shortcode */}
-//         </div>
-//       </section>
-//     </>
-//   );
-// };
+function About() {
+  return (
+    <div>
+      <section id="information" class="nobackground pt-5">
+        <div className="container">
+          {/* About Item /1 */}
+          <div className="neoh_fn_about_item ">
+            <div className="img_item">
+              <img src={require("./images/map.png")} alt="" />
+            </div>
+            <div className="content_item">
+              <div className="neoh_fn_title" data-align="left">
+                <h3 className="atmosphere about-headings">USICT</h3>
+                <div className="line usict-line">
+                  <span />
+                </div>
+              </div>
+              <div className="desc atmospheric">
+                <p>
+                  Simply holding a Neoh will give you access to seasonal
+                  airdrops, merchandise, physical and digital artworks,
+                  collectibles and more.
+                </p>
+                <p>
+                  We understand the importance of the cross-over between these
+                  worlds and we truly believe to bridge these two together. Our
+                  goals will always be for the community - creating, building
+                  and innovating together with the commmunity.
+                </p>
+              </div>
+              <div className="buttons">
+                <a href="/" className="neoh_fn_button only_text">
+                  <span className="text">Join Community</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="neoh_fn_about_item reverse">
+            <div className="img_item">
+              <img src={require("./images/map.png")} alt="" />
+            </div>
+            <div className="content_item">
+              {/* <MatrixRain /> */}
+              <div className="neoh_fn_title" data-align="left">
+                <h3 className="atmosphere about-headings">StartUp Hackathon</h3>
+                <div className="line line-about startup-line">
+                  <span />
+                </div>
+              </div>
+              <div className="desc atmospheric">
+                <p>
+                  As the first hero of the Neoh Universe, collection has over
+                  9,999 unique skins drawn from the different missions and
+                  challenges he faced throughout his life.
+                </p>
+                <p>
+                  The artwork has been hand-drawned by Robert Green in the
+                  traditional anime style and composited by Layla Efiyo.
+                </p>
+              </div>
+              <div className="buttons">
+                <a href="/" target="_blank" className="neoh_fn_button ">
+                  <span className="but-text">Home</span>
+                </a>
+                <a href="/register" target="_blank" className="neoh_fn_button">
+                  <span className="text">Register</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="neoh_fn_about_item">
+            <div className="img_item">
+              <img src={require("./images/map.png")} alt="" />
+            </div>
+            <div className="content_item">
+              {/* <MatrixRain /> */}
+              <div className="neoh_fn_title" data-align="left">
+                <h3 className="atmosphere about-headings">SDC USS</h3>
+                <div className="line line-about sdc-line">
+                  <span />
+                </div>
+              </div>
+              <div className="desc atmospheric">
+                <p>
+                  As the first hero of the Neoh Universe, collection has over
+                  9,999 unique skins drawn from the different missions and
+                  challenges he faced throughout his life.
+                </p>
+                <p>
+                  The artwork has been hand-drawned by Robert Green in the
+                  traditional anime style and composited by Layla Efiyo.
+                </p>
+              </div>
+              <div className="buttons">
+                <a href="/" target="_blank" className="neoh_fn_button ">
+                  <span className="but-text">Our Website</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="neoh_fn_about_item reverse">
+            <div className="img_item">
+              <img src={require("./images/map.png")} alt="" />
+            </div>
+            <div className="content_item">
+              {/* <MatrixRain /> */}
+              <div className="neoh_fn_title" data-align="left">
+                <h3 className="atmosphere about-headings">TechSpace</h3>
+                <div className="line line-about techspace-line">
+                  <span />
+                </div>
+              </div>
+              <div className="desc atmospheric">
+                <p>
+                  As the first hero of the Neoh Universe, collection has over
+                  9,999 unique skins drawn from the different missions and
+                  challenges he faced throughout his life.
+                </p>
+                <p>
+                  The artwork has been hand-drawned by Robert Green in the
+                  traditional anime style and composited by Layla Efiyo.
+                </p>
+              </div>
+              <div className="buttons">
+                <a href="/" target="_blank" className="neoh_fn_button ">
+                  <span className="but-text">Our Website</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          {/* !About Item /2 */}
+        </div>
+      </section>
+    </div>
+  );
+}
 
-// export default About;
+export default About;
