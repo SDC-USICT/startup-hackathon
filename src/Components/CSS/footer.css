@@ -1,7 +1,7 @@
 .container_f{
 	max-width: 1170px;
 	margin:auto;
-    padding: 4rem 8rem;
+    padding: 4rem 6rem;
     /* border-top: 2px solid red; */
 }
 .footerborder{
@@ -22,11 +22,14 @@ ul{
 }
 .footer-col{
    width: 25%;
-   padding: 0 15px;
+   padding: 0 12px;
 }
 .footer-col img{
 	width: 150px;
 	height: 100px;
+}
+.title{
+	padding-right: 2.5rem;
 }
 .title a{
 	text-decoration: none;
