@@ -10,12 +10,15 @@ import About from "./Components/About";
 import Team from "./Components/Team";
 import ScrollOnTop from "./Components/scrollOnTop";
 import Announcement from "./Components/announcement";
+import ScrollToTop from "./Components/ScrollToTop";
 // import Timeline from "./Components/Timeline";
+
 
 function App() {
   return (
     <>
       <Router>
+        <ScrollToTop/>
         <Navbar />
         <ScrollOnTop />
         <Routes>
